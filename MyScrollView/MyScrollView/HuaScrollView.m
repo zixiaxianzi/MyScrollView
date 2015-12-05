@@ -110,7 +110,6 @@
     
     //设置轮播图
     _scrollView.contentSize = CGSizeMake(CGRectGetWidth(_scrollView.frame)* (_imagesArray.count + 2), CGRectGetHeight(_scrollView.frame));
-#warning 这里什么意思??
 //    _scrollView.contentOffset = CGPointMake(0, 0);
     [_scrollView scrollRectToVisible:CGRectMake(CGRectGetWidth(_scrollView.frame), 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame)) animated:YES];
     
@@ -159,7 +158,6 @@
 
 #pragma mark  ----------- scrollView Delegate -----------------------
 //已经滚动
-#warning   ???/
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     CGFloat pageWith = self.scrollView.frame.size.width;
